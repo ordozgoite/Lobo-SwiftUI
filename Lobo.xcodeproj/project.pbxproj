@@ -1,0 +1,442 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ED205B4B29709C1E0045AE8F /* UIScreen+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED205B4A29709C1E0045AE8F /* UIScreen+Extensions.swift */; };
+		ED205B502970AF790045AE8F /* FindMatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED205B4F2970AF790045AE8F /* FindMatchView.swift */; };
+		ED205B542970BA200045AE8F /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED205B532970BA200045AE8F /* View+Extensions.swift */; };
+		ED205B572970BDC40045AE8F /* ServersScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED205B562970BDC40045AE8F /* ServersScreen.swift */; };
+		ED205B592970BDD60045AE8F /* LobbyScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED205B582970BDD60045AE8F /* LobbyScreen.swift */; };
+		ED2651D8296F897B009467FC /* LoboApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2651D7296F897B009467FC /* LoboApp.swift */; };
+		ED2651DC296F897D009467FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED2651DB296F897D009467FC /* Assets.xcassets */; };
+		ED2651DF296F897D009467FC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED2651DE296F897D009467FC /* Preview Assets.xcassets */; };
+		ED2651EA296F89B5009467FC /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2651E9296F89B5009467FC /* MainScreen.swift */; };
+		ED2651FB296FB3D7009467FC /* Ghastly Panic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ED2651FA296FB3D7009467FC /* Ghastly Panic.ttf */; };
+		ED2651FF296FB638009467FC /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2651FE296FB638009467FC /* Color.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		ED205B4A29709C1E0045AE8F /* UIScreen+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScreen+Extensions.swift"; sourceTree = "<group>"; };
+		ED205B4F2970AF790045AE8F /* FindMatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindMatchView.swift; sourceTree = "<group>"; };
+		ED205B532970BA200045AE8F /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
+		ED205B562970BDC40045AE8F /* ServersScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServersScreen.swift; sourceTree = "<group>"; };
+		ED205B582970BDD60045AE8F /* LobbyScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LobbyScreen.swift; sourceTree = "<group>"; };
+		ED2651D4296F897B009467FC /* Lobo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lobo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED2651D7296F897B009467FC /* LoboApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoboApp.swift; sourceTree = "<group>"; };
+		ED2651DB296F897D009467FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ED2651DE296F897D009467FC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		ED2651E9296F89B5009467FC /* MainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
+		ED2651ED296FADFC009467FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		ED2651FA296FB3D7009467FC /* Ghastly Panic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ghastly Panic.ttf"; sourceTree = "<group>"; };
+		ED2651FE296FB638009467FC /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ED2651D1296F897B009467FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ED205B4C2970A7BA0045AE8F /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				ED2651E9296F89B5009467FC /* MainScreen.swift */,
+				ED205B562970BDC40045AE8F /* ServersScreen.swift */,
+				ED205B582970BDD60045AE8F /* LobbyScreen.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		ED205B552970BA250045AE8F /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				ED205B532970BA200045AE8F /* View+Extensions.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		ED2651CB296F897B009467FC = {
+			isa = PBXGroup;
+			children = (
+				ED2651D6296F897B009467FC /* Lobo */,
+				ED2651D5296F897B009467FC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ED2651D5296F897B009467FC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ED2651D4296F897B009467FC /* Lobo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ED2651D6296F897B009467FC /* Lobo */ = {
+			isa = PBXGroup;
+			children = (
+				ED2651ED296FADFC009467FC /* Info.plist */,
+				ED205B552970BA250045AE8F /* Extension */,
+				ED2651F9296FB2F1009467FC /* Fonts */,
+				ED2651F8296FB2EA009467FC /* Util */,
+				ED2651E8296F8998009467FC /* Webservices */,
+				ED2651E7296F8991009467FC /* Model */,
+				ED2651E6296F898A009467FC /* ViewModel */,
+				ED2651E5296F8985009467FC /* View */,
+				ED205B4C2970A7BA0045AE8F /* Screen */,
+				ED2651D7296F897B009467FC /* LoboApp.swift */,
+				ED205B4A29709C1E0045AE8F /* UIScreen+Extensions.swift */,
+				ED2651DB296F897D009467FC /* Assets.xcassets */,
+				ED2651DD296F897D009467FC /* Preview Content */,
+			);
+			path = Lobo;
+			sourceTree = "<group>";
+		};
+		ED2651DD296F897D009467FC /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				ED2651DE296F897D009467FC /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		ED2651E5296F8985009467FC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ED205B4F2970AF790045AE8F /* FindMatchView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		ED2651E6296F898A009467FC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		ED2651E7296F8991009467FC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		ED2651E8296F8998009467FC /* Webservices */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Webservices;
+			sourceTree = "<group>";
+		};
+		ED2651F8296FB2EA009467FC /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				ED2651FE296FB638009467FC /* Color.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		ED2651F9296FB2F1009467FC /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				ED2651FA296FB3D7009467FC /* Ghastly Panic.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ED2651D3296F897B009467FC /* Lobo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED2651E2296F897D009467FC /* Build configuration list for PBXNativeTarget "Lobo" */;
+			buildPhases = (
+				ED2651D0296F897B009467FC /* Sources */,
+				ED2651D1296F897B009467FC /* Frameworks */,
+				ED2651D2296F897B009467FC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Lobo;
+			productName = Lobo;
+			productReference = ED2651D4296F897B009467FC /* Lobo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ED2651CC296F897B009467FC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					ED2651D3296F897B009467FC = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = ED2651CF296F897B009467FC /* Build configuration list for PBXProject "Lobo" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ED2651CB296F897B009467FC;
+			productRefGroup = ED2651D5296F897B009467FC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ED2651D3296F897B009467FC /* Lobo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ED2651D2296F897B009467FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED2651FB296FB3D7009467FC /* Ghastly Panic.ttf in Resources */,
+				ED2651DF296F897D009467FC /* Preview Assets.xcassets in Resources */,
+				ED2651DC296F897D009467FC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ED2651D0296F897B009467FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED205B572970BDC40045AE8F /* ServersScreen.swift in Sources */,
+				ED2651D8296F897B009467FC /* LoboApp.swift in Sources */,
+				ED205B502970AF790045AE8F /* FindMatchView.swift in Sources */,
+				ED205B4B29709C1E0045AE8F /* UIScreen+Extensions.swift in Sources */,
+				ED205B592970BDD60045AE8F /* LobbyScreen.swift in Sources */,
+				ED2651EA296F89B5009467FC /* MainScreen.swift in Sources */,
+				ED205B542970BA200045AE8F /* View+Extensions.swift in Sources */,
+				ED2651FF296FB638009467FC /* Color.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		ED2651E0296F897D009467FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ED2651E1296F897D009467FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ED2651E3296F897D009467FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Lobo/Preview Content\"";
+				DEVELOPMENT_TEAM = 3945C3P68V;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Lobo/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ordozgoite.Lobo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ED2651E4296F897D009467FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Lobo/Preview Content\"";
+				DEVELOPMENT_TEAM = 3945C3P68V;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Lobo/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ordozgoite.Lobo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ED2651CF296F897B009467FC /* Build configuration list for PBXProject "Lobo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED2651E0296F897D009467FC /* Debug */,
+				ED2651E1296F897D009467FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED2651E2296F897D009467FC /* Build configuration list for PBXNativeTarget "Lobo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED2651E3296F897D009467FC /* Debug */,
+				ED2651E4296F897D009467FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ED2651CC296F897B009467FC /* Project object */;
+}
