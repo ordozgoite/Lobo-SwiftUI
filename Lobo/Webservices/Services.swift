@@ -46,4 +46,25 @@ struct Services {
                 }
             }
     }
+    
+    func joinLobby(_ playerName: String, withCode lobbyCode: String, completionHandler: @escaping (Lobby) -> Void) {
+        
+        let parameters: [String: Any] = ["name": playerName, "id": UUID().uuidString]
+        
+        AF.request(Constants.Urls.createLobby + "/" + lobbyCode, method: .patch, parameters: parameters, encoding: JSONEncoding.default, headers: ["Content-Type": "application/json"])
+            .response { response in
+                switch response.result {
+                case .success(let data):
+                    do {
+                        let lobby = try JSONDecoder().decode(Lobby.self, from: data!)
+                        print("lobby decodificado: \(lobby)")
+                        completionHandler(lobby)
+                    } catch {
+                        print("Error decoding JSON: \(error.localizedDescription)")
+                    }
+                case .failure(let error):
+                    print(error)
+                }
+            }
+    }
 }

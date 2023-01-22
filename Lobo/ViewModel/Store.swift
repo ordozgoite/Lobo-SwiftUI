@@ -9,4 +9,5 @@ import Foundation
 
 class Store: ObservableObject {
     var lobby: Lobby?
+    var username: String?
 }

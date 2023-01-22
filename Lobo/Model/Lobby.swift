@@ -10,4 +10,5 @@ import Foundation
 struct Lobby: Decodable {
     let _id: String
     var players: [Player]
+    var joinCode: String
 }

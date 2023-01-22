@@ -7,6 +7,11 @@
 
 import SwiftUI
 
+enum Screen {
+    case LobbyScreen
+    case ServersScreen
+}
+
 struct MainScreen: View {
     
     @EnvironmentObject var store: Store
@@ -15,6 +20,7 @@ struct MainScreen: View {
     @State private var isLobbyScreenPresented: Bool = false
     @State private var isInputNameViewPresented: Bool = false
     @State private var username: String = ""
+    @State private var whereDoYouGo: Screen = .LobbyScreen
     
     var body: some View {
         ZStack {
@@ -32,12 +38,14 @@ struct MainScreen: View {
                     PlayButtonsView()
                 }
             }
-            .opacity(isFindMatchViewPresented ? 0.25 : 1)
+            .opacity(isFindMatchViewPresented || isInputNameViewPresented ? 0.25 : 1)
             .animation(.easeOut, value: isFindMatchViewPresented)
             
             ModalView()
             
+            // NEXT SCREENS
             NavigationLink(destination: LobbyScreen(), isActive: $isLobbyScreenPresented, label: {})
+            NavigationLink(destination: ServersScreen(), isActive: $isServersScreenPresented, label: {})
         }
         .embedNavigationView()
     }
@@ -86,12 +94,11 @@ struct MainScreen: View {
                     .foregroundColor(.white)
             }
             .onTapGesture {
-//                self.isFindMatchViewPresented = true
-                store.lobby = Lobby(_id: "63cd5bab44a07a085c7d49b8", players: [Player(name: "ordoz", id: "327966B3-BA52-42C9-A098-4C334BBA7381")])
-                self.isLobbyScreenPresented = true
+                self.isFindMatchViewPresented = true
             }
             
             Button {
+                self.whereDoYouGo = .LobbyScreen
                 isInputNameViewPresented = true
             } label: {
                 ZStack {
@@ -115,13 +122,25 @@ struct MainScreen: View {
     @ViewBuilder
     func ModalView() -> some View {
         if isFindMatchViewPresented {
-            FindMatchView(isFindMatchViewPresented: $isFindMatchViewPresented, isServersScreenPresented: $isServersScreenPresented, isLobbyScreenPresented: $isLobbyScreenPresented)
+            FindMatchView(isFindMatchViewPresented: $isFindMatchViewPresented) {
+                // MATCH MAKING
+            } serversButtonPressed: {
+                whereDoYouGo = .ServersScreen
+                self.isFindMatchViewPresented = false
+                self.isInputNameViewPresented = true
+            }
+            
         } else if isInputNameViewPresented {
             InputNameView(username: $username, isInputNameViewPresented: $isInputNameViewPresented) {
-                Services.shared.createLobby(name: self.username) { lobby in
-                    print("🔴🔴🔴\(lobby)🔴🔴🔴")
-                    store.lobby = lobby
-                    isLobbyScreenPresented = true
+                store.username = self.username
+                switch whereDoYouGo {
+                case .LobbyScreen:
+                    Services.shared.createLobby(name: self.username) { lobby in
+                        store.lobby = lobby
+                        isLobbyScreenPresented = true
+                    }
+                case .ServersScreen:
+                    self.isServersScreenPresented = true
                 }
             }
         }

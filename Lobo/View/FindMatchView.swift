@@ -10,8 +10,8 @@ import SwiftUI
 struct FindMatchView: View {
     
     @Binding var isFindMatchViewPresented: Bool
-    @Binding var isServersScreenPresented: Bool
-    @Binding var isLobbyScreenPresented: Bool
+    var automatchButtonPressed: () -> Void
+    var serversButtonPressed: () -> Void
     
     var body: some View {
         ZStack {
@@ -54,7 +54,7 @@ struct FindMatchView: View {
     func ButtonsView() -> some View {
         VStack(spacing: 32) {
             Button {
-                isLobbyScreenPresented = true
+                automatchButtonPressed()
             } label: {
                 Text("Automatch")
                     .foregroundColor(.white)
@@ -62,7 +62,7 @@ struct FindMatchView: View {
             }
 
             Button {
-                isServersScreenPresented = true
+                serversButtonPressed()
             } label: {
                 Text("Show Servers")
                     .foregroundColor(.white)
@@ -74,6 +74,6 @@ struct FindMatchView: View {
 
 struct FindMatchView_Previews: PreviewProvider {
     static var previews: some View {
-        FindMatchView(isFindMatchViewPresented: .constant(false), isServersScreenPresented: .constant(false), isLobbyScreenPresented: .constant(false))
+        FindMatchView(isFindMatchViewPresented: .constant(true), automatchButtonPressed: {}, serversButtonPressed: {})
     }
 }
