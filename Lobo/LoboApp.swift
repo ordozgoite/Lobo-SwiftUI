@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct LoboApp: App {
+    
+    @State private var store = Store()
+    
     var body: some Scene {
         WindowGroup {
-            MainScreen()
+            MainScreen().environmentObject(store)
         }
     }
 }

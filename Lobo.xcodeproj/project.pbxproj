@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B6A264A194D623E03FB6813 /* Pods_Lobo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACE436081A5FD09417A60A99 /* Pods_Lobo.framework */; };
 		ED205B4B29709C1E0045AE8F /* UIScreen+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED205B4A29709C1E0045AE8F /* UIScreen+Extensions.swift */; };
 		ED205B502970AF790045AE8F /* FindMatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED205B4F2970AF790045AE8F /* FindMatchView.swift */; };
 		ED205B542970BA200045AE8F /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED205B532970BA200045AE8F /* View+Extensions.swift */; };
@@ -18,9 +19,22 @@
 		ED2651EA296F89B5009467FC /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2651E9296F89B5009467FC /* MainScreen.swift */; };
 		ED2651FB296FB3D7009467FC /* Ghastly Panic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ED2651FA296FB3D7009467FC /* Ghastly Panic.ttf */; };
 		ED2651FF296FB638009467FC /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2651FE296FB638009467FC /* Color.swift */; };
+		ED3C7C51297C929A002BD11A /* LobbyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3C7C50297C929A002BD11A /* LobbyViewModel.swift */; };
+		ED3C7C54297C92D7002BD11A /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3C7C53297C92D7002BD11A /* Player.swift */; };
+		ED3C7C56297C9451002BD11A /* SocketService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3C7C55297C9451002BD11A /* SocketService.swift */; };
+		ED3C7C58297CAA30002BD11A /* InputNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3C7C57297CAA30002BD11A /* InputNameView.swift */; };
+		ED3C7C5A297CAFC4002BD11A /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3C7C59297CAFC4002BD11A /* Services.swift */; };
+		ED3C7C5D297CB0CC002BD11A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3C7C5C297CB0CC002BD11A /* Constants.swift */; };
+		ED3C7C5F297CCA63002BD11A /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3C7C5E297CCA63002BD11A /* Store.swift */; };
+		ED88EEF22976DD5600E8F0A5 /* ServersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED88EEF12976DD5600E8F0A5 /* ServersViewModel.swift */; };
+		ED88EEF42976DDB700E8F0A5 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED88EEF32976DDB700E8F0A5 /* Game.swift */; };
+		ED88EEF62976DDE800E8F0A5 /* Lobby.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED88EEF52976DDE800E8F0A5 /* Lobby.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8069B4E6205B9AFD534B59A1 /* Pods-Lobo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lobo.debug.xcconfig"; path = "Target Support Files/Pods-Lobo/Pods-Lobo.debug.xcconfig"; sourceTree = "<group>"; };
+		867E1941F0181D7EA983B29B /* Pods-Lobo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lobo.release.xcconfig"; path = "Target Support Files/Pods-Lobo/Pods-Lobo.release.xcconfig"; sourceTree = "<group>"; };
+		ACE436081A5FD09417A60A99 /* Pods_Lobo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lobo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED205B4A29709C1E0045AE8F /* UIScreen+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScreen+Extensions.swift"; sourceTree = "<group>"; };
 		ED205B4F2970AF790045AE8F /* FindMatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindMatchView.swift; sourceTree = "<group>"; };
 		ED205B532970BA200045AE8F /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
@@ -34,6 +48,16 @@
 		ED2651ED296FADFC009467FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		ED2651FA296FB3D7009467FC /* Ghastly Panic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ghastly Panic.ttf"; sourceTree = "<group>"; };
 		ED2651FE296FB638009467FC /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		ED3C7C50297C929A002BD11A /* LobbyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LobbyViewModel.swift; sourceTree = "<group>"; };
+		ED3C7C53297C92D7002BD11A /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		ED3C7C55297C9451002BD11A /* SocketService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketService.swift; sourceTree = "<group>"; };
+		ED3C7C57297CAA30002BD11A /* InputNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputNameView.swift; sourceTree = "<group>"; };
+		ED3C7C59297CAFC4002BD11A /* Services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
+		ED3C7C5C297CB0CC002BD11A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		ED3C7C5E297CCA63002BD11A /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		ED88EEF12976DD5600E8F0A5 /* ServersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServersViewModel.swift; sourceTree = "<group>"; };
+		ED88EEF32976DDB700E8F0A5 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		ED88EEF52976DDE800E8F0A5 /* Lobby.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lobby.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,12 +65,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B6A264A194D623E03FB6813 /* Pods_Lobo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		94BEECD4CAE2BDFE5D7CBCCA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8069B4E6205B9AFD534B59A1 /* Pods-Lobo.debug.xcconfig */,
+				867E1941F0181D7EA983B29B /* Pods-Lobo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		BF98CB59F03601299732F9C5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ACE436081A5FD09417A60A99 /* Pods_Lobo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		ED205B4C2970A7BA0045AE8F /* Screen */ = {
 			isa = PBXGroup;
 			children = (
@@ -70,6 +112,8 @@
 			children = (
 				ED2651D6296F897B009467FC /* Lobo */,
 				ED2651D5296F897B009467FC /* Products */,
+				94BEECD4CAE2BDFE5D7CBCCA /* Pods */,
+				BF98CB59F03601299732F9C5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -113,6 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				ED205B4F2970AF790045AE8F /* FindMatchView.swift */,
+				ED3C7C57297CAA30002BD11A /* InputNameView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -120,6 +165,9 @@
 		ED2651E6296F898A009467FC /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				ED88EEF12976DD5600E8F0A5 /* ServersViewModel.swift */,
+				ED3C7C50297C929A002BD11A /* LobbyViewModel.swift */,
+				ED3C7C5E297CCA63002BD11A /* Store.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -127,6 +175,9 @@
 		ED2651E7296F8991009467FC /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				ED88EEF32976DDB700E8F0A5 /* Game.swift */,
+				ED88EEF52976DDE800E8F0A5 /* Lobby.swift */,
+				ED3C7C53297C92D7002BD11A /* Player.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -134,6 +185,8 @@
 		ED2651E8296F8998009467FC /* Webservices */ = {
 			isa = PBXGroup;
 			children = (
+				ED3C7C59297CAFC4002BD11A /* Services.swift */,
+				ED3C7C55297C9451002BD11A /* SocketService.swift */,
 			);
 			path = Webservices;
 			sourceTree = "<group>";
@@ -142,6 +195,7 @@
 			isa = PBXGroup;
 			children = (
 				ED2651FE296FB638009467FC /* Color.swift */,
+				ED3C7C5C297CB0CC002BD11A /* Constants.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -161,9 +215,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ED2651E2296F897D009467FC /* Build configuration list for PBXNativeTarget "Lobo" */;
 			buildPhases = (
+				FB2A2294B49013F485284125 /* [CP] Check Pods Manifest.lock */,
 				ED2651D0296F897B009467FC /* Sources */,
 				ED2651D1296F897B009467FC /* Frameworks */,
 				ED2651D2296F897B009467FC /* Resources */,
+				1F43C018F6C16D4F65249FE0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -220,17 +276,69 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1F43C018F6C16D4F65249FE0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Lobo/Pods-Lobo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Lobo/Pods-Lobo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Lobo/Pods-Lobo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB2A2294B49013F485284125 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Lobo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		ED2651D0296F897B009467FC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED3C7C56297C9451002BD11A /* SocketService.swift in Sources */,
+				ED3C7C5D297CB0CC002BD11A /* Constants.swift in Sources */,
+				ED88EEF22976DD5600E8F0A5 /* ServersViewModel.swift in Sources */,
+				ED3C7C5F297CCA63002BD11A /* Store.swift in Sources */,
+				ED88EEF42976DDB700E8F0A5 /* Game.swift in Sources */,
 				ED205B572970BDC40045AE8F /* ServersScreen.swift in Sources */,
+				ED3C7C51297C929A002BD11A /* LobbyViewModel.swift in Sources */,
 				ED2651D8296F897B009467FC /* LoboApp.swift in Sources */,
+				ED3C7C54297C92D7002BD11A /* Player.swift in Sources */,
 				ED205B502970AF790045AE8F /* FindMatchView.swift in Sources */,
 				ED205B4B29709C1E0045AE8F /* UIScreen+Extensions.swift in Sources */,
+				ED88EEF62976DDE800E8F0A5 /* Lobby.swift in Sources */,
 				ED205B592970BDD60045AE8F /* LobbyScreen.swift in Sources */,
 				ED2651EA296F89B5009467FC /* MainScreen.swift in Sources */,
+				ED3C7C58297CAA30002BD11A /* InputNameView.swift in Sources */,
+				ED3C7C5A297CAFC4002BD11A /* Services.swift in Sources */,
 				ED205B542970BA200045AE8F /* View+Extensions.swift in Sources */,
 				ED2651FF296FB638009467FC /* Color.swift in Sources */,
 			);
@@ -355,6 +463,7 @@
 		};
 		ED2651E3296F897D009467FC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8069B4E6205B9AFD534B59A1 /* Pods-Lobo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -386,6 +495,7 @@
 		};
 		ED2651E4296F897D009467FC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 867E1941F0181D7EA983B29B /* Pods-Lobo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

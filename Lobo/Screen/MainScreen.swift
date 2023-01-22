@@ -9,9 +9,12 @@ import SwiftUI
 
 struct MainScreen: View {
     
+    @EnvironmentObject var store: Store
     @State private var isFindMatchViewPresented: Bool = false
     @State private var isServersScreenPresented: Bool = false
     @State private var isLobbyScreenPresented: Bool = false
+    @State private var isInputNameViewPresented: Bool = false
+    @State private var username: String = ""
     
     var body: some View {
         ZStack {
@@ -34,7 +37,8 @@ struct MainScreen: View {
             
             ModalView()
             
-            NavigationLink(destination: ServersScreen(), isActive: $isServersScreenPresented, label: {})
+//            NavigationLink(destination: ServersScreen(), isActive: $isServersScreenPresented, label: {})
+//            NavigationLink(destination: LobbyScreen(), isActive: $isLobbyScreenPresented, label: {})
             NavigationLink(destination: LobbyScreen(), isActive: $isLobbyScreenPresented, label: {})
         }
         .embedNavigationView()
@@ -88,7 +92,9 @@ struct MainScreen: View {
                 self.isFindMatchViewPresented = true
             }
             
-            NavigationLink(destination: LobbyScreen()) {
+            Button {
+                isInputNameViewPresented = true
+            } label: {
                 ZStack {
                     Rectangle()
                         .fill(.black)
@@ -102,16 +108,23 @@ struct MainScreen: View {
                         .foregroundColor(.white)
                 }
             }
-            
         }
         .padding(.bottom, 16)
     }
     
-    //MARK: - Find Match Modal
+    //MARK: - Modal
     @ViewBuilder
     func ModalView() -> some View {
         if isFindMatchViewPresented {
             FindMatchView(isFindMatchViewPresented: $isFindMatchViewPresented, isServersScreenPresented: $isServersScreenPresented, isLobbyScreenPresented: $isLobbyScreenPresented)
+        } else if isInputNameViewPresented {
+            InputNameView(username: $username, isInputNameViewPresented: $isInputNameViewPresented) {
+                Services.shared.createLobby(name: self.username) { lobby in
+                    print("🔴🔴🔴\(lobby)🔴🔴🔴")
+                    store.lobby = lobby
+                    isLobbyScreenPresented = true
+                }
+            }
         }
     }
 }
