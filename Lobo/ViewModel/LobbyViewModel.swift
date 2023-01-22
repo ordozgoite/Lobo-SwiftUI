@@ -12,16 +12,16 @@ class LobbyViewModel: ObservableObject {
     var socket = SocketService.shared.getSocket()
     @Published var playersInLobby: [Player] = []
     
-    func updatePlayers(newPlayer player: Any) {
+    func updatePlayers(players: Any) {
             print("⚠️⚠️⚠️")
-            print(player as Any)
+            print(players as Any)
             print("⚠️⚠️⚠️")
             do {
-                let jsonData = try JSONSerialization.data(withJSONObject: player, options: [])
+                let jsonData = try JSONSerialization.data(withJSONObject: players, options: [])
                 
-                let newPlayer = try JSONDecoder().decode(Player.self, from: jsonData)
+                let decodedPlayers = try JSONDecoder().decode([Player].self, from: jsonData)
                 
-                self.playersInLobby.append(newPlayer)
+                self.playersInLobby = decodedPlayers
             } catch {
                 print(error)
             }

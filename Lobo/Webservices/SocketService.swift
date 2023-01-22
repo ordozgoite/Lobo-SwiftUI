@@ -36,8 +36,4 @@ class SocketService: ObservableObject {
             callback(data)
         }
     }
-
-//    func emit(_ event: String, _ data: [String: Any]) {
-//        socket.emit(event, data)
-//    }
 }

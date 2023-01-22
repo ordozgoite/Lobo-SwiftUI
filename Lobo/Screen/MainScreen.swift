@@ -37,8 +37,6 @@ struct MainScreen: View {
             
             ModalView()
             
-//            NavigationLink(destination: ServersScreen(), isActive: $isServersScreenPresented, label: {})
-//            NavigationLink(destination: LobbyScreen(), isActive: $isLobbyScreenPresented, label: {})
             NavigationLink(destination: LobbyScreen(), isActive: $isLobbyScreenPresented, label: {})
         }
         .embedNavigationView()
@@ -75,7 +73,6 @@ struct MainScreen: View {
     @ViewBuilder
     func PlayButtonsView() -> some View {
         VStack(spacing: 48) {
-            
             ZStack {
                 Rectangle()
                     .fill(.black)
@@ -89,7 +86,9 @@ struct MainScreen: View {
                     .foregroundColor(.white)
             }
             .onTapGesture {
-                self.isFindMatchViewPresented = true
+//                self.isFindMatchViewPresented = true
+                store.lobby = Lobby(_id: "63cd5bab44a07a085c7d49b8", players: [Player(name: "ordoz", id: "327966B3-BA52-42C9-A098-4C334BBA7381")])
+                self.isLobbyScreenPresented = true
             }
             
             Button {
@@ -131,6 +130,6 @@ struct MainScreen: View {
 
 struct MainScreen_Previews: PreviewProvider {
     static var previews: some View {
-        MainScreen()
+        MainScreen().environmentObject(Store())
     }
 }

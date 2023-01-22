@@ -18,21 +18,16 @@ struct LobbyScreen: View {
                 Text(player.name)
             }
         }
-        .navigationTitle("Lobby")
+        .navigationTitle("Lobby \(store.lobby!._id)")
         .embedNavigationView()
         .onAppear {
-            print("Dentro da sala⚠️ \nLobbyID: \(store.lobby?._id ?? "")")
-            // Connect to Socket
-            SocketService.shared.connect()
-            
-            // Say that I'm new at the room
-            lobbyVM.socket.emit("join-lobby", store.lobby?._id ?? "")
+            lobbyVM.socket.emit("join-lobby", store.lobby!._id)
             
             // Listen to new players
             lobbyVM.socket.on("join-lobby") { dataArray, ack in
-                if let player = dataArray.first {
-                    print("🤩 PLAYER: \(player)")
-                    lobbyVM.updatePlayers(newPlayer: player)
+                if let players = dataArray.first {
+                    print("🤩 PLAYERS: \(players)")
+                    lobbyVM.updatePlayers(players: players)
                 }
             }
         }

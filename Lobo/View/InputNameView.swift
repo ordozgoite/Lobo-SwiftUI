@@ -24,20 +24,13 @@ struct InputNameView: View {
             VStack {
                 HeaderView()
                 
-                TextField("Choose a username", text: $username)
-                    .textFieldStyle(.plain)
-                    .multilineTextAlignment(.center)
-                    .font(Font(UIFont(name: "Avenir Light", size: 32)!))
-                    .textInputAutocapitalization(.never)
+                TextFieldView()
                 
-                Button("Done") {
-                    createLobby()
-                }
-                .font(Font(UIFont(name: "Avenir Light", size: 32)!))
-                .shadow(color: .red, radius: 5, x: 1, y: 1)
-                .disabled(username.isEmpty)
+                ButtonView()
+                
             }
             .foregroundColor(.white)
+            
         }
         .frame(width: 300, height: 250)
     }
@@ -56,6 +49,27 @@ struct InputNameView: View {
             }
         }
         .padding(16)
+    }
+    
+    //MARK: - TextView
+    @ViewBuilder
+    private func TextFieldView() -> some View {
+        TextField("Choose a username", text: $username)
+            .textFieldStyle(.plain)
+            .multilineTextAlignment(.center)
+            .font(Font(UIFont(name: "Avenir Light", size: 32)!))
+            .textInputAutocapitalization(.never)
+    }
+    
+    //MARK: - Done Button
+    @ViewBuilder
+    private func ButtonView() -> some View {
+        Button("Done") {
+            createLobby()
+        }
+        .font(Font(UIFont(name: "Avenir Light", size: 32)!))
+        .shadow(color: .gray, radius: 5, x: 1, y: 1)
+        .disabled(username.isEmpty)
     }
 }
 

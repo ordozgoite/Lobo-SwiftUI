@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		8B6A264A194D623E03FB6813 /* Pods_Lobo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACE436081A5FD09417A60A99 /* Pods_Lobo.framework */; };
-		ED205B4B29709C1E0045AE8F /* UIScreen+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED205B4A29709C1E0045AE8F /* UIScreen+Extensions.swift */; };
 		ED205B502970AF790045AE8F /* FindMatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED205B4F2970AF790045AE8F /* FindMatchView.swift */; };
 		ED205B542970BA200045AE8F /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED205B532970BA200045AE8F /* View+Extensions.swift */; };
 		ED205B572970BDC40045AE8F /* ServersScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED205B562970BDC40045AE8F /* ServersScreen.swift */; };
@@ -35,7 +34,6 @@
 		8069B4E6205B9AFD534B59A1 /* Pods-Lobo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lobo.debug.xcconfig"; path = "Target Support Files/Pods-Lobo/Pods-Lobo.debug.xcconfig"; sourceTree = "<group>"; };
 		867E1941F0181D7EA983B29B /* Pods-Lobo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lobo.release.xcconfig"; path = "Target Support Files/Pods-Lobo/Pods-Lobo.release.xcconfig"; sourceTree = "<group>"; };
 		ACE436081A5FD09417A60A99 /* Pods_Lobo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lobo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		ED205B4A29709C1E0045AE8F /* UIScreen+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScreen+Extensions.swift"; sourceTree = "<group>"; };
 		ED205B4F2970AF790045AE8F /* FindMatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindMatchView.swift; sourceTree = "<group>"; };
 		ED205B532970BA200045AE8F /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
 		ED205B562970BDC40045AE8F /* ServersScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServersScreen.swift; sourceTree = "<group>"; };
@@ -138,7 +136,6 @@
 				ED2651E5296F8985009467FC /* View */,
 				ED205B4C2970A7BA0045AE8F /* Screen */,
 				ED2651D7296F897B009467FC /* LoboApp.swift */,
-				ED205B4A29709C1E0045AE8F /* UIScreen+Extensions.swift */,
 				ED2651DB296F897D009467FC /* Assets.xcassets */,
 				ED2651DD296F897D009467FC /* Preview Content */,
 			);
@@ -333,7 +330,6 @@
 				ED2651D8296F897B009467FC /* LoboApp.swift in Sources */,
 				ED3C7C54297C92D7002BD11A /* Player.swift in Sources */,
 				ED205B502970AF790045AE8F /* FindMatchView.swift in Sources */,
-				ED205B4B29709C1E0045AE8F /* UIScreen+Extensions.swift in Sources */,
 				ED88EEF62976DDE800E8F0A5 /* Lobby.swift in Sources */,
 				ED205B592970BDD60045AE8F /* LobbyScreen.swift in Sources */,
 				ED2651EA296F89B5009467FC /* MainScreen.swift in Sources */,
