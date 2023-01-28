@@ -7,8 +7,18 @@
 
 import Foundation
 
-struct Lobby: Decodable {
+struct Lobby: Decodable, Identifiable {
+    
+    var id = UUID()
     let _id: String
+    let host: Player
     var players: [Player]
     var joinCode: String
+    
+    enum CodingKeys: CodingKey {
+        case _id
+        case host
+        case players
+        case joinCode
+    }
 }

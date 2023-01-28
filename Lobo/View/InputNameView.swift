@@ -24,11 +24,16 @@ struct InputNameView: View {
             VStack {
                 HeaderView()
                 
+                Spacer()
+                
                 TextFieldView()
+                
+                Spacer()
                 
                 ButtonView()
                 
             }
+            .padding(16)
             .foregroundColor(.white)
             
         }
@@ -48,13 +53,13 @@ struct InputNameView: View {
                     .foregroundColor(.white)
             }
         }
-        .padding(16)
+        .padding([.top, .bottom], 8)
     }
     
     //MARK: - TextView
     @ViewBuilder
     private func TextFieldView() -> some View {
-        TextField("Choose a username", text: $username)
+        TextField("Choose a nickname", text: $username)
             .textFieldStyle(.plain)
             .multilineTextAlignment(.center)
             .font(Font(UIFont(name: "Avenir Light", size: 32)!))

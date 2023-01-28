@@ -29,9 +29,9 @@ struct LobbyScreen: View {
         .toolbar(.hidden)
         .onAppear {
             lobbyVM.playersInLobby = store.lobby!.players
-            
+
             lobbyVM.socket.emit("join-lobby", store.lobby!._id)
-            
+
             lobbyVM.socket.on("join-lobby") { dataArray, ack in
                 if let players = dataArray.first {
                     print("🤩 PLAYERS: \(players)")
@@ -48,17 +48,21 @@ struct LobbyScreen: View {
             Spacer()
             
             Image(systemName: isCodeHidden ? "eye.slash" : "eye")
+                .resizable()
+                .scaledToFit()
+                .frame(width: 32, height: 32)
                 .onTapGesture {
                     self.isCodeHidden.toggle()
                 }
             
             Text(isCodeHidden ? "*****" : store.lobby!.joinCode)
+                .font(.title2)
         }
     }
 }
 
-struct LobbyScreen_Previews: PreviewProvider {
-    static var previews: some View {
-        LobbyScreen().environmentObject(Store())
-    }
-}
+//struct LobbyScreen_Previews: PreviewProvider {
+//    static var previews: some View {
+//        LobbyScreen().environmentObject(Store())
+//    }
+//}

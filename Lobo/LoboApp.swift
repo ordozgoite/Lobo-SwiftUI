@@ -14,7 +14,7 @@ struct LoboApp: App {
         SocketService.shared.connect()
     }
     
-    @State private var store = Store()
+    let store = Store()
     
     var body: some Scene {
         WindowGroup {

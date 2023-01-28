@@ -20,14 +20,21 @@
 		ED2651FF296FB638009467FC /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2651FE296FB638009467FC /* Color.swift */; };
 		ED3C7C51297C929A002BD11A /* LobbyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3C7C50297C929A002BD11A /* LobbyViewModel.swift */; };
 		ED3C7C54297C92D7002BD11A /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3C7C53297C92D7002BD11A /* Player.swift */; };
-		ED3C7C56297C9451002BD11A /* SocketService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3C7C55297C9451002BD11A /* SocketService.swift */; };
+		ED3C7C56297C9451002BD11A /* LBSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3C7C55297C9451002BD11A /* LBSocket.swift */; };
 		ED3C7C58297CAA30002BD11A /* InputNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3C7C57297CAA30002BD11A /* InputNameView.swift */; };
-		ED3C7C5A297CAFC4002BD11A /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3C7C59297CAFC4002BD11A /* Services.swift */; };
+		ED3C7C5A297CAFC4002BD11A /* LBServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3C7C59297CAFC4002BD11A /* LBServices.swift */; };
 		ED3C7C5D297CB0CC002BD11A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3C7C5C297CB0CC002BD11A /* Constants.swift */; };
 		ED3C7C5F297CCA63002BD11A /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3C7C5E297CCA63002BD11A /* Store.swift */; };
+		ED6C67FC2980E3B10013824E /* Sizes.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6C67FB2980E3B10013824E /* Sizes.swift */; };
+		ED6C67FE2981650E0013824E /* ServerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6C67FD2981650E0013824E /* ServerCell.swift */; };
 		ED88EEF22976DD5600E8F0A5 /* ServersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED88EEF12976DD5600E8F0A5 /* ServersViewModel.swift */; };
 		ED88EEF42976DDB700E8F0A5 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED88EEF32976DDB700E8F0A5 /* Game.swift */; };
 		ED88EEF62976DDE800E8F0A5 /* Lobby.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED88EEF52976DDE800E8F0A5 /* Lobby.swift */; };
+		EDE36D772984834300CDBEC0 /* LBSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE36D762984834300CDBEC0 /* LBSearchBar.swift */; };
+		EDE36D7B29848C3D00CDBEC0 /* Placeholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE36D7A29848C3D00CDBEC0 /* Placeholder.swift */; };
+		EDE36D7F2984B58000CDBEC0 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE36D7E2984B58000CDBEC0 /* HTTPClient.swift */; };
+		EDE36D812984B60C00CDBEC0 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE36D802984B60C00CDBEC0 /* Endpoint.swift */; };
+		EDE36D832984B7B200CDBEC0 /* LBEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE36D822984B7B200CDBEC0 /* LBEndpoints.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,14 +55,21 @@
 		ED2651FE296FB638009467FC /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		ED3C7C50297C929A002BD11A /* LobbyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LobbyViewModel.swift; sourceTree = "<group>"; };
 		ED3C7C53297C92D7002BD11A /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
-		ED3C7C55297C9451002BD11A /* SocketService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketService.swift; sourceTree = "<group>"; };
+		ED3C7C55297C9451002BD11A /* LBSocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBSocket.swift; sourceTree = "<group>"; };
 		ED3C7C57297CAA30002BD11A /* InputNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputNameView.swift; sourceTree = "<group>"; };
-		ED3C7C59297CAFC4002BD11A /* Services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
+		ED3C7C59297CAFC4002BD11A /* LBServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBServices.swift; sourceTree = "<group>"; };
 		ED3C7C5C297CB0CC002BD11A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		ED3C7C5E297CCA63002BD11A /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		ED6C67FB2980E3B10013824E /* Sizes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sizes.swift; sourceTree = "<group>"; };
+		ED6C67FD2981650E0013824E /* ServerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerCell.swift; sourceTree = "<group>"; };
 		ED88EEF12976DD5600E8F0A5 /* ServersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServersViewModel.swift; sourceTree = "<group>"; };
 		ED88EEF32976DDB700E8F0A5 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		ED88EEF52976DDE800E8F0A5 /* Lobby.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lobby.swift; sourceTree = "<group>"; };
+		EDE36D762984834300CDBEC0 /* LBSearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBSearchBar.swift; sourceTree = "<group>"; };
+		EDE36D7A29848C3D00CDBEC0 /* Placeholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Placeholder.swift; sourceTree = "<group>"; };
+		EDE36D7E2984B58000CDBEC0 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		EDE36D802984B60C00CDBEC0 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		EDE36D822984B7B200CDBEC0 /* LBEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBEndpoints.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,7 +144,7 @@
 				ED205B552970BA250045AE8F /* Extension */,
 				ED2651F9296FB2F1009467FC /* Fonts */,
 				ED2651F8296FB2EA009467FC /* Util */,
-				ED2651E8296F8998009467FC /* Webservices */,
+				ED2651E8296F8998009467FC /* Network */,
 				ED2651E7296F8991009467FC /* Model */,
 				ED2651E6296F898A009467FC /* ViewModel */,
 				ED2651E5296F8985009467FC /* View */,
@@ -153,8 +167,11 @@
 		ED2651E5296F8985009467FC /* View */ = {
 			isa = PBXGroup;
 			children = (
+				EDE36D7929848C2D00CDBEC0 /* Extensions */,
+				EDE36D78298489D800CDBEC0 /* Components */,
 				ED205B4F2970AF790045AE8F /* FindMatchView.swift */,
 				ED3C7C57297CAA30002BD11A /* InputNameView.swift */,
+				ED6C67FD2981650E0013824E /* ServerCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -179,13 +196,15 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		ED2651E8296F8998009467FC /* Webservices */ = {
+		ED2651E8296F8998009467FC /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				ED3C7C59297CAFC4002BD11A /* Services.swift */,
-				ED3C7C55297C9451002BD11A /* SocketService.swift */,
+				EDE36D802984B60C00CDBEC0 /* Endpoint.swift */,
+				EDE36D7E2984B58000CDBEC0 /* HTTPClient.swift */,
+				EDE36D822984B7B200CDBEC0 /* LBEndpoints.swift */,
+				EDE36D7D2984B56B00CDBEC0 /* Services */,
 			);
-			path = Webservices;
+			path = Network;
 			sourceTree = "<group>";
 		};
 		ED2651F8296FB2EA009467FC /* Util */ = {
@@ -193,6 +212,7 @@
 			children = (
 				ED2651FE296FB638009467FC /* Color.swift */,
 				ED3C7C5C297CB0CC002BD11A /* Constants.swift */,
+				ED6C67FB2980E3B10013824E /* Sizes.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -203,6 +223,31 @@
 				ED2651FA296FB3D7009467FC /* Ghastly Panic.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		EDE36D78298489D800CDBEC0 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				EDE36D762984834300CDBEC0 /* LBSearchBar.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		EDE36D7929848C2D00CDBEC0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EDE36D7A29848C3D00CDBEC0 /* Placeholder.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		EDE36D7D2984B56B00CDBEC0 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				ED3C7C59297CAFC4002BD11A /* LBServices.swift */,
+				ED3C7C55297C9451002BD11A /* LBSocket.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -320,11 +365,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED3C7C56297C9451002BD11A /* SocketService.swift in Sources */,
+				ED3C7C56297C9451002BD11A /* LBSocket.swift in Sources */,
 				ED3C7C5D297CB0CC002BD11A /* Constants.swift in Sources */,
 				ED88EEF22976DD5600E8F0A5 /* ServersViewModel.swift in Sources */,
 				ED3C7C5F297CCA63002BD11A /* Store.swift in Sources */,
 				ED88EEF42976DDB700E8F0A5 /* Game.swift in Sources */,
+				EDE36D772984834300CDBEC0 /* LBSearchBar.swift in Sources */,
+				EDE36D7F2984B58000CDBEC0 /* HTTPClient.swift in Sources */,
 				ED205B572970BDC40045AE8F /* ServersScreen.swift in Sources */,
 				ED3C7C51297C929A002BD11A /* LobbyViewModel.swift in Sources */,
 				ED2651D8296F897B009467FC /* LoboApp.swift in Sources */,
@@ -332,11 +379,16 @@
 				ED205B502970AF790045AE8F /* FindMatchView.swift in Sources */,
 				ED88EEF62976DDE800E8F0A5 /* Lobby.swift in Sources */,
 				ED205B592970BDD60045AE8F /* LobbyScreen.swift in Sources */,
+				EDE36D832984B7B200CDBEC0 /* LBEndpoints.swift in Sources */,
+				ED6C67FC2980E3B10013824E /* Sizes.swift in Sources */,
 				ED2651EA296F89B5009467FC /* MainScreen.swift in Sources */,
 				ED3C7C58297CAA30002BD11A /* InputNameView.swift in Sources */,
-				ED3C7C5A297CAFC4002BD11A /* Services.swift in Sources */,
+				EDE36D812984B60C00CDBEC0 /* Endpoint.swift in Sources */,
+				ED3C7C5A297CAFC4002BD11A /* LBServices.swift in Sources */,
+				ED6C67FE2981650E0013824E /* ServerCell.swift in Sources */,
 				ED205B542970BA200045AE8F /* View+Extensions.swift in Sources */,
 				ED2651FF296FB638009467FC /* Color.swift in Sources */,
+				EDE36D7B29848C3D00CDBEC0 /* Placeholder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

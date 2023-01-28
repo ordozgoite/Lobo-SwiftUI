@@ -14,6 +14,7 @@ extension Color {
     struct UI {
         let forestGray = Color("forestGray")
         let forestRed = Color("forestRed")
+        let forestBlue = Color("forestBlue")
         let lightRed = Color("lightRed")
         let darkRed = Color("darkRed")
         let offwhite = Color("offwhite")

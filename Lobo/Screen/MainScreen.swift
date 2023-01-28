@@ -15,9 +15,10 @@ enum Screen {
 struct MainScreen: View {
     
     @EnvironmentObject var store: Store
+    @State var alertData: (Bool, String) = (false, "")
+    @State var isLobbyScreenPresented: Bool = false
     @State private var isFindMatchViewPresented: Bool = false
     @State private var isServersScreenPresented: Bool = false
-    @State private var isLobbyScreenPresented: Bool = false
     @State private var isInputNameViewPresented: Bool = false
     @State private var username: String = ""
     @State private var whereDoYouGo: Screen = .LobbyScreen
@@ -40,6 +41,7 @@ struct MainScreen: View {
             }
             .opacity(isFindMatchViewPresented || isInputNameViewPresented ? 0.25 : 1)
             .animation(.easeOut, value: isFindMatchViewPresented)
+            .animation(.easeOut, value: isInputNameViewPresented)
             
             ModalView()
             
@@ -135,9 +137,16 @@ struct MainScreen: View {
                 store.username = self.username
                 switch whereDoYouGo {
                 case .LobbyScreen:
-                    Services.shared.createLobby(name: self.username) { lobby in
-                        store.lobby = lobby
-                        isLobbyScreenPresented = true
+                    Task {
+                        let result = await Services.shared.createLobby(username: self.username)
+                        
+                        switch result {
+                        case .success(let lobby):
+                            store.lobby = lobby
+                            isLobbyScreenPresented = true
+                        case .failure:
+                            alertData = (true, "Failure")
+                        }
                     }
                 case .ServersScreen:
                     self.isServersScreenPresented = true
